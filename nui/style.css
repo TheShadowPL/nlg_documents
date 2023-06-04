@@ -130,6 +130,7 @@ body {
   #card2{
     background: #FF473B;
     z-index: 40;
+    display: none;
   }
   
   #card3{
