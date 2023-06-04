@@ -1,3 +1,7 @@
+body {
+	display: hide;
+}
+
 
 .wallet {
     position: absolute;
@@ -131,4 +135,5 @@
   #card3{
     background: #5BB6FF;
     z-index: -10;
+    
   }
