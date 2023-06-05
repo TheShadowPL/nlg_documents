@@ -10,12 +10,12 @@ author "TheShadow#4691 & qbisz#5187"
 
 version '1.0'
 
-ui_page "html/index.html"
+ui_page "nui/index.html"
 
 files {
-    "html/index.html",
-    "html/style.css",
-    "html/script.js"
+    "nui/index.html",
+    "nui/style.css",
+    "nui/script.js"
 }
 
 client_scripts {
