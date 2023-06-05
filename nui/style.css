@@ -1,140 +1,227 @@
 body {
-	display: hide;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-
 .wallet {
-    position: absolute;
-    display: block;
-    width: 450px;
-    height: 340px;
-    background: #444;
-    border-radius: 15px;
-    box-shadow: 0px 0px 120px rgba(40,40,40,0.8);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  #logo {
-    position: absolute;
-    display: block;
-    z-index: 200;
-    width: 60px;
-    bottom: 40px;
-    left: 40px;
-  }
-  
-  /* ----- Departments ----- */
-  
-  .department {
-    position: absolute;
-    display: block;
-    width: 90%;
-    background: #444;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-top: 1px dashed rgba(100,100,100,1);
-  }
-  
-  #one {
-    bottom: 0;
-    height: 170px;
-    z-index: 100;
-  }
-  
-  #two {
-    bottom: 50px;
-    height: 170px;
-    z-index: 50;
-  }
-  
-  #three {
-    bottom: 100px;
-    height: 170px;
-    z-index: 0;
-  }
-  
-  /* ----- Cards ----- */
-  
-  .card {
-    position: absolute;
-    display: block;
-    width: 80%;
-    height: 210px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 90;
-    bottom: 0;
-    border-radius: 10px;
-  }
-  
-  #visa {
-    position: absolute;
-    display: block;
-    width: 60px;
-    top: 12px;
-    right: 20px;
-  }
-  
-  .chip {
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 40px;
-    background: #D9C798;
-    border-radius: 5px;
-    top: 35px;
-    left: 50px;
-  }
-  
-  .card h1 {
-    display: inline-block;
-    font-family: 'Oswald';
-    font-weight: 300;
-    font-size: 26px;
-    color: #FFF;
-    width: 100%;
-    margin: 85px 0px 0px 50px;
-    text-decoration: none;
-  }
-  
-  .card h2 {
-    display: inline-block;
-    font-family: 'Oswald';
-    font-weight: 300;
-    font-size: 18px;
-    color: #FFF;
-    margin: 0;
-    width: 30%;
-    margin: 0px 0px 0px 50px;
-  }
-  
-  .card p {
-    display: inline-block;
-    font-family: 'Lato';
-    font-weight: 900;
-    font-size: 12px;
-    color: #FFF;
-    margin: 0;
-    width: 30%;
-    margin: 15px 0px 0px 50px;
-  }
-  
-  #card1 {
-    background: #7533FF;
-  }
-  
-  #card2{
-    background: #FF473B;
-    z-index: 40;
-    display: none;
-  }
-  
-  #card3{
-    background: #5BB6FF;
-    z-index: -10;
-    
-  }
+  display: flex;
+  justify-content: center;
+}
+
+.wallet1 {
+  position: relative;
+  display: block;
+  width: 450px;
+  height: 340px;
+  background-image: url('https://img.freepik.com/premium-photo/black-leather-texture-background-closeup-wallet-abstract-material-pattern-luxury-bumped-animal-skin_79161-334.jpg');
+  border-radius: 15px 0px 0px 15px;
+  box-shadow: 0px 0px 120px rgba(40,40,40,0.8);
+}
+
+.wallet2 {
+  position: relative;
+  display: block;
+  width: 450px;
+  height: 340px;
+  background-image: url('https://img.freepik.com/premium-photo/black-leather-texture-background-closeup-wallet-abstract-material-pattern-luxury-bumped-animal-skin_79161-334.jpg');
+  border-radius: 0px 15px 15px 0px;
+  box-shadow: 0px 0px 120px rgba(40,40,40,0.8);
+}
+
+.logo {
+  position: relative;
+  display: block;
+  z-index: 100;
+  width: 60px;
+  bottom: 40px;
+  left: 40px;
+  margin-top: 300px;
+}
+
+.logo2 {
+  position: relative;
+  display: block;
+  z-index: 100;
+  width: 60px;
+  bottom: 40px;
+  left: 40px;
+  margin-top: 300px;
+}
+
+/* ----- Departments ----- */
+
+.department {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-image: url('https://img.freepik.com/premium-photo/black-leather-texture-background-closeup-wallet-abstract-material-pattern-luxury-bumped-animal-skin_79161-334.jpg');
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-top: 1px dashed rgba(100,100,100,1);
+  border-radius: 0px 0px 0px 15px;
+}
+
+#one {
+  bottom: 0;
+  height: 170px;
+  z-index: 100;
+}
+
+#two {
+  bottom: 50px;
+  height: 170px;
+  z-index: 50;
+}
+
+#three {
+  bottom: 100px;
+  height: 170px;
+  z-index: 10;
+}
+
+/* ----- Cards ----- */
+
+.card {
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 210px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 90;
+  bottom: 0;
+  border-radius: 10px;
+  transition: bottom 0.3s;
+}
+
+.card2 {
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 210px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 90;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+#visa {
+  position: absolute;
+  display: block;
+  width: 60px;
+  top: 12px;
+  right: 20px;
+}
+
+.chip {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 40px;
+  background: #D9C798;
+  border-radius: 5px;
+  top: 35px;
+  left: 50px;
+}
+
+.text-right {
+  position: relative;
+  display: block;
+  z-index: 100;
+  width: 60px;
+  bottom: 40px;
+  left: 40px;
+  margin-top: 300px;
+}
+
+.card h1 {
+  display: inline-block;
+  font-family: 'Oswald';
+  font-weight: 300;
+  font-size: 26px;
+  color: #FFF;
+  width: 100%;
+  margin: 85px 0px 0px 50px;
+  text-decoration: none;
+}
+
+.card h2 {
+  display: inline-block;
+  font-family: 'Oswald';
+  font-weight: 300;
+  font-size: 18px;
+  color: #FFF;
+  margin: 0;
+  width: 30%;
+  margin: 0px 0px 0px 50px;
+}
+
+.card p {
+  display: inline-block;
+  font-family: 'Lato';
+  font-weight: 900;
+  font-size: 12px;
+  color: #FFF;
+  margin: 0;
+  width: 30%;
+  margin: 15px 0px 0px 50px;
+}
+
+.text-right {
+  position: relative;
+  display: block;
+  z-index: 100;
+  width: 60px;
+  bottom: 40px;
+  left: 50px;
+  margin-top: 300px;
+  text-align: center;
+}
+
+.wallet2 p1 {
+  color: orange;
+  font-size: 9px;
+  font-family: 'Lato';
+  font-weight: 900;
+  margin: 0;
+  width: 30%;
+}
+
+.wallet2 p2 {
+  color: #FFF;
+  font-size: 12px;
+  font-family: 'Lato';
+  font-weight: 900;
+  margin: 0;
+  width: 30%;
+}
+
+#card1 {
+  background: #7533FF;
+  z-index: 70;
+}
+
+#card2 {
+  background: #FF473B;
+  z-index: 40;
+}
+
+#card3 {
+  background: #5BB6FF;
+  z-index: 10;
+}
+
+#card4 {
+    background-image: url('https://img.gta5-mods.com/q95/images/2015-dodge-charger-pursuit-1-0-0/51280b-2017-07-23_f92c82db012718cbb44f0166356bae32.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}

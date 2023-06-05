@@ -1,12 +1,10 @@
+
 var departments = document.getElementsByClassName('department');
 var cards = document.getElementsByClassName('card');
 var bottomValues = ['0px', '50px', '100px'];
 
 var oldBottom = 0;
 var newBottom = 0;
-
-//$("body").show()
-//$("body").none()
 
 for (var i = 0; i < cards.length; i++) {
   cards[i].addEventListener('click', function() {
